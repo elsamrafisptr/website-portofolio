@@ -1,0 +1,29 @@
+import { RocketLaunch } from "@phosphor-icons/react";
+
+const Project = () => {
+    return (
+        <>
+            <div className="container mx-auto pb-6">
+                <div className="px-5">
+                    <div className="mt-12">
+                        <div>
+                            <div className="flex items-center gap-2">
+                                <RocketLaunch size={32} color="#171717" />
+                                <h1 className="text-2xl font-semibold">
+                                    Project
+                                </h1>
+                            </div>
+                            <p className="text-slate-500 mt-2">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Fuga sunt cupiditate ducimus
+                                quibusdam non qui veniam laborum quas odio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
+};
+
+export default Project;
