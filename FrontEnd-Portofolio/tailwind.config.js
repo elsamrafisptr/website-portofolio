@@ -2,6 +2,9 @@
 module.exports = {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
+        fontFamily: {
+            'classicFont': ['DM Serif Display', 'serif']
+        },
         extend: {
             keyframes: {
                 scrollRight: {
