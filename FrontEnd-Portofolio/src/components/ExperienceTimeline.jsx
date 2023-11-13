@@ -35,24 +35,19 @@ const ExperienceTimeline = () => {
     ];
     return (
         <>
-            <div className="mt-6">
+            <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-4">
                 {inputsExperience.map((input) => (
-                    <div className="grid grid-cols-5">
-                        <div className="col-span-1 w-1 bg-black">
-                            
+                    <div key={input.id} className="flex items-center gap-4 px-5 py-4 border rounded-lg">
+                        <div className="w-16 h-16 flex justify-center items-center">
+                            <img src={input.image} alt={input.alt} className="w-20" />
                         </div>
-                        <div key={input.id} className="flex items-center gap-4 px-5 py-4 border rounded-lg mt-4 col-span-4">
-                            <div className="w-16 h-16 flex justify-center items-center">
-                                <img src={input.image} alt={input.alt} className="w-20" />
-                            </div>
-                            <div>
-                                <h1 className="font-medium text-lg">
-                                    {input.position}
-                                </h1>
-                                <a href={input.linkComp}>{input.compName}</a>
-                                <p>{input.timeSpace}</p>
-                                <p>{input.duration}</p>
-                            </div>
+                        <div>
+                            <h1 className="font-semibold text-lg text-slate-900">
+                                {input.position}
+                            </h1>
+                            <a className="text-slate-900 underline" href={input.linkComp}>{input.compName}</a>
+                            <p className="text-slate-600">{input.timeSpace}</p>
+                            <p className="italic text-slate-600 text-sm font-medium">~ {input.duration}</p>
                         </div>
                     </div>
                 ))}

@@ -3,9 +3,9 @@ import { Newspaper } from "@phosphor-icons/react";
 const Article = () => {
     return (
         <>
-            <div className="container mx-auto pb-6">
+            <div className="container mx-auto pb-6 min-h-screen">
                 <div className="px-5">
-                    <div className="mt-12">
+                    <div className="pt-20">
                         <div>
                             <div className="flex justify-between items-end">
                                 <div className="flex items-center gap-2">

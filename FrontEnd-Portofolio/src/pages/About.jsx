@@ -6,9 +6,9 @@ import ExperienceTimeline from "../components/ExperienceTimeline";
 const About = () => {
     return (
         <>
-            <div className="container mx-auto py-6">
+            <div className="container mx-auto pb-6 min-h-screen">
                 <div className="px-5">
-                    <div className="mt-6">
+                    <div className="pt-20">
                         <div>
                             <div className="flex items-center gap-2">
                                 <Briefcase size={32} color="#171717" />

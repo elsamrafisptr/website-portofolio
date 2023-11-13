@@ -59,7 +59,7 @@ const Navbar = () => {
                             {inputs.map((input) => (
                                 <NavLink
                                     key={input.id}
-                                    className={`px-4 py-1.5 mr-2 transition-all text-slate-800 font-medium text-lg rounded-lg hover:bg-orange-100`}
+                                    className={`px-4 py-1.5 mr-2 transition-all text-slate-800 font-medium text-lg rounded-full hover:bg-orange-100 hover:text-orange-600`}
                                     to={input.route}
                                 >
                                     {input.content}
@@ -77,13 +77,13 @@ const Navbar = () => {
                         size={32}
                     />
                     <a
-                        className="text-base font-medium px-4 py-1.5 rounded-3xl border border-orange-600 text-orange-600 mr-2"
+                        className="text-base font-medium px-4 py-1.5 rounded-3xl border border-orange-600 text-orange-600 mr-2 bg-orange-100 shadow-orange-100 drop-shadow-xl"
                         href="/download"
                     >
                         Download CV
                     </a>
                     <a
-                        className="text-base font-medium px-4 py-1.5 rounded-3xl bg-orange-600 text-white"
+                        className="text-base font-medium px-4 py-1.5 rounded-3xl bg-orange-600 text-orange-50 drop-shadow-xl"
                         href="/contact"
                     >
                         Contact Me!
