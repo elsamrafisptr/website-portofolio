@@ -90,6 +90,15 @@ const Navbar = () => {
                     </a>
                 </div>
             </div>
+            {showNavbar && (
+                <ul className={`flex flex-col justify-center items-center absolute top-0 h-screen bg-gradient-to-b from-stone-950 to-stone-800 text-orange-100 transition-all duration-1000 ${showNavbar ? "left-0 w-10/12" : "-left-80 w-10/12"}`}>
+                    {inputs.map((input) => (
+                        <li key={input.id} className="px-4 cursor-pointer capitalize py-6 text-2xl translate-x-0 transition-all duration-300">
+                            <a onClick={handleNavbar} href={input.route}>{input.content}</a>
+                        </li>
+                    ))}
+                </ul>
+            )}
             {/* <div id="mobileNavbar" className={`${showNavbar ? 'flex' : 'hidden'}`}>
                 <ul className="absolute top-16 left-0 flex-col w-full h-[cal(100vh-77px)] bg-slate-50 border-t-2">
                     <li className="text-center">

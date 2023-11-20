@@ -37,7 +37,11 @@ const ExperienceTimeline = () => {
         <>
             <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-4">
                 {inputsExperience.map((input) => (
-                    <div key={input.id} className="flex items-center gap-4 px-5 py-4 border rounded-lg">
+                    <div key={input.id} 
+                        className="flex items-center gap-4 px-5 py-4 border rounded-lg 
+                        hover:scale-105 transition-all duration-300 hover:bg-stone-50
+                        hover:border-stone-500 hover:shadow-lg"
+                        >
                         <div className="w-16 h-16 flex justify-center items-center">
                             <img src={input.image} alt={input.alt} className="w-20" />
                         </div>

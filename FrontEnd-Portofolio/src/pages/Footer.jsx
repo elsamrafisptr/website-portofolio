@@ -22,9 +22,9 @@ const Footer = () => {
 
     return (
         <>
-            <div className="container mx-auto pb-6 min-h-screen relative">
+            <div className="container mx-auto pb-6 relative">
                 <div className="px-5">
-                    <div className="pt-20 grid grid-cols-1 md:grid-cols-2">
+                    <div className="pt-12 grid grid-cols-1">
                         <div className="bg-[url(../../heroBg.webp)]  rounded-lg w-full min-h-full bg-cover bg-bottom p-4 shadow-xl">
                             <div className="flex items-end flex-col gap-2 drop">
 
@@ -40,7 +40,7 @@ const Footer = () => {
                             </div>
 
                         </div>
-                        <div className="mt-4 bg-slate-200 p-4 rounded-md ">
+                        {/* <div className="mt-4 bg-slate-200 p-4 rounded-md ">
                             <form action="" className="grid grid-cols-2 gap-2 backdrop-blur-sm">
                                 <label
                                     htmlFor="Name"
@@ -88,8 +88,8 @@ const Footer = () => {
                                 
                                 <button className="bg-white col-start-2 px-3 py-2 rounded shadow-sm focus-within:border-amber-500 focus-within:ring-1 focus-within:ring-amber-500">Send</button>
                             </form>
-                        </div>
-                        <p className="text-xs font-medium text-slate-700 bottom-2 absolute">Copyright 2023 by Elsam Rafi Saputra. All Right Reserved </p>
+                        </div> */}
+                        <p className="text-xs font-medium text-slate-700 mt-6 text-center">Copyright 2023 by Elsam Rafi Saputra. All Right Reserved </p>
 
                     </div>
                 </div>

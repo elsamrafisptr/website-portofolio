@@ -3,20 +3,6 @@ import React, { useState } from "react"
 const delay = 2500
 
 const SlideShow = () => {
-    const [index, setIndex] = useState(0)
-
-    React.useEffect(() => {
-        setTimeout(
-            () =>
-                setIndex((prevIndex) =>
-                    prevIndex === inputs.length - 1 ? 0 : prevIndex + 1
-                ),
-            delay
-        );
-
-        return () => { };
-    }, [index])
-
     const inputs = [
         {
             id: "pj1",
@@ -42,10 +28,42 @@ const SlideShow = () => {
             desc: "desc 3",
             date: "date 3"
         },
+        {
+            id: "pj4",
+            img: "",
+            alt: "",
+            title: "title 4",
+            desc: "desc 4",
+            date: "date 4"
+        },
+        {
+            id: "pj5",
+            img: "",
+            alt: "",
+            title: "title 5",
+            desc: "desc 5",
+            date: "date 5"
+        },
     ]
+
+    const [index, setIndex] = useState(0)
+
+    React.useEffect(() => {
+        setTimeout(
+            () =>
+                setIndex((prevIndex) =>
+                    prevIndex === inputs.length - 1 ? 0 : prevIndex + 1
+                ),
+            delay
+        );
+
+        return () => { };
+    }, [index])
+
+    
     return (
         <>
-            <div className="mt-6 slideshow my-0 mx-auto overflow-hidden max-w-5xl">
+            <div className="mt-6 slideshow my-0 mx-auto overflow-hidden">
                 <div className="slideshowSlider whitespace-nowrap" style={{ transform: `translate3d(${-index * 336}px, 0, 0)`, transition: "ease 1250ms"}}>
                     <div className="slide flex flex-row">
                         {inputs.map((input) => (
