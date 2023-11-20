@@ -119,7 +119,7 @@ const InfiniteCaraousel = () => {
                     </p>
                 </div>
                 <div className="mt-4 overflow-hidden relative h-20 w-full">
-                    <div className="flex absolute left-0 justify-center items-center gap-4 h-full w-[700%] lg:w-[300%] animate-[scrollLeft_24s_linear_infinite] lg:animate-[scrollLeft_24s_linear_infinite]">
+                    <div className="flex absolute left-0 justify-center items-center gap-4 h-full w-[1000%] lg:w-[300%] animate-[scrollLeft_24s_linear_infinite] lg:animate-[scrollLeft_24s_linear_infinite]">
                         {inputsSkills.map((input) => (
                             <div
                                 key={input.id}
@@ -132,7 +132,7 @@ const InfiniteCaraousel = () => {
                     </div>
                 </div>
                 <div className="overflow-hidden relative mt-2 h-16 w-full px-6">
-                    <div className="flex absolute left-0 justify-center items-center gap-4 h-full w-[700%] lg:w-[300%] animate-[scrollRight_24s_linear_infinite] lg:animate-[scrollRight_24s_linear_infinite]">
+                    <div className="flex absolute left-0 justify-center items-center gap-4 h-full w-[1000%] lg:w-[300%] animate-[scrollRight_24s_linear_infinite] lg:animate-[scrollRight_24s_linear_infinite]">
                         {inputsSkills.map((input) => (
                             <div
                                 key={input.id}

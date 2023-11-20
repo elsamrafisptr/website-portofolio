@@ -1,10 +1,9 @@
-import React from "react";
 import Navbar from "../components/Navbar";
 
 const Headline = () => {
     return (
         <>
-            <div className="bg-lime-50 bg-[url(../../heroBg.webp)] bg-cover bg-bottom">
+            <div className="bg-lime-50 bg-[url(../../heroBg.webp)] bg-cover bg-bottom mx-auto">
                 <div className="container mx-auto">
                     <Navbar />
                     <div className="flex justify-center items-center min-h-screen pt-16 px-5 ">
