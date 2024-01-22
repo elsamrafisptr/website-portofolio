@@ -19,9 +19,7 @@ const Project = () => {
                                 <a href="" className="text-sky-600 underline">Show More</a>
                             </div>
                             <p className="text-slate-500 mt-2">
-                                Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Fuga sunt cupiditate ducimus
-                                quibusdam non qui veniam laborum quas odio.
+                                List of my project that can describe my logic, my skill and my expertise in programming
                             </p>
                         </div>
                         <SlideShow></SlideShow>

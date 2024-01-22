@@ -24,25 +24,25 @@ const SlideShow = () => {
             id: "pj3",
             img: "",
             alt: "",
-            title: "title 3",
-            desc: "desc 3",
-            date: "date 3"
+            title: "Point of Sales Website for UMKM",
+            desc: "Helping UMKM to survive their business with this open source website",
+            date: "December 2023"
         },
         {
             id: "pj4",
             img: "",
             alt: "",
-            title: "title 4",
-            desc: "desc 4",
-            date: "date 4"
+            title: "Queue App for Hospital Clinic",
+            desc: "Using Python XMLRPC Network to register patience",
+            date: "December 2023"
         },
         {
             id: "pj5",
             img: "",
             alt: "",
-            title: "title 5",
-            desc: "desc 5",
-            date: "date 5"
+            title: "GUI Interface Point of Sales",
+            desc: "Simple implementation of our UMKM Website",
+            date: "December 2023"
         },
     ]
 
@@ -71,7 +71,7 @@ const SlideShow = () => {
                                 <img src={input.id} alt={input.alt} className="w-80 max-w-xs h-32 bg-sky-200 rounded border-none" />
                                 <div className="mt-2">
                                     <h1 className="font-semibold text-lg">{input.title}</h1>
-                                    <p className="">{input.desc}</p>
+                                    <p className="truncate w-80">{input.desc}</p>
                                     <p className="text-sm">{input.date}</p>
                                 </div>
                             </a>
